@@ -1,0 +1,19 @@
+package com.ama_patrol.data
+
+sealed class OrderType {
+    object Ascending: OrderType()
+    object Descending: OrderType()
+}
+
+sealed class NoteOrder(val orderType: OrderType) {
+    class Title(orderType: OrderType): NoteOrder(orderType)
+    class Date(orderType: OrderType): NoteOrder(orderType)
+
+    fun copy(orderType: OrderType): NoteOrder {
+        return when(this) {
+            is Title -> Title(orderType)
+            is Date -> Date(orderType)
+        }
+    }
+}
+

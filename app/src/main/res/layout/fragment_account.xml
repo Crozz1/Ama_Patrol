@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/akun_gambar"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="15dp"
+        android:src="@drawable/ic_baseline_account_circle_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/nama_petugas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="Nama Petugas"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/npp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:paddingTop="50dp"
+        android:paddingBottom="15dp"
+        android:text="NPP"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:paddingTop="100dp"
+        android:paddingBottom="15dp"
+        android:text="Akun"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="Data Pribadi"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        app:layout_constraintTop_toBottomOf="@id/text_account" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_change_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="Change Email"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintTop_toBottomOf="@id/btn_data" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/reset_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="Reset Password"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_change_email" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/general"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:backgroundTint="@color/white"
+        android:paddingTop="20dp"
+        android:text="General"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/reset_password" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/privacy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="Privacy Policy"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        app:layout_constraintTop_toBottomOf="@id/general" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/terms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="Terms Of Service"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        app:layout_constraintTop_toBottomOf="@id/privacy" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="Versi Aplikasi"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        app:layout_constraintTop_toBottomOf="@id/terms" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

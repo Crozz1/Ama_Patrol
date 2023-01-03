@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_menu">
+
+    <fragment
+        android:id="@+id/navigation_menu"
+        android:name="com.ama_patrol.presentation.menu.MenuFragment"
+        android:label="@string/menu"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_menu_to_loginActivity"
+            app:destination="@id/loginActivity" />
+        <action
+            android:id="@+id/action_navigation_menu_to_kelolaan_fragment"
+            app:destination="@id/kelolaan_fragment" />
+        <action
+            android:id="@+id/action_navigation_menu_to_ots_fragment"
+            app:destination="@id/ots_fragment" />
+        <action
+            android:id="@+id/action_navigation_menu_to_locatorFragment"
+            app:destination="@id/locatorFragment" />
+        <action
+            android:id="@+id/action_navigation_menu_to_learningFragment"
+            app:destination="@id/learningFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tagging_fragment"
+        android:name="com.ama_patrol.presentation.tagging.TaggingFragment"
+        android:label="@string/tagging"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/account_fragment"
+        android:name="com.ama_patrol.presentation.account.AccountFragment"
+        android:label="@string/account"
+        tools:layout="@layout/fragment_notifications" >
+        <action
+            android:id="@+id/action_account_fragment_to_ubahPassFragment"
+            app:destination="@id/ubahPassFragment" />
+        <action
+            android:id="@+id/action_account_fragment_to_accountDetailFragment"
+            app:destination="@id/accountDetailFragment" />
+        <action
+            android:id="@+id/action_account_fragment_to_TOSFragment"
+            app:destination="@id/TOSFragment" />
+        <action
+            android:id="@+id/action_account_fragment_to_changeEmailFragment"
+            app:destination="@id/changeEmailFragment" />
+    </fragment>
+
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.ama_patrol.presentation.LoginActivity"
+        android:label="Login" />
+
+    <fragment
+        android:id="@+id/kelolaan_fragment"
+        android:name="com.ama_patrol.presentation.menu.manage.KelolaanFragment"
+        android:label="Kelolaan" >
+        <action
+            android:id="@+id/action_kelolaan_fragment_to_ots_fragment"
+            app:destination="@id/ots_fragment" />
+        <action
+            android:id="@+id/action_kelolaan_fragment_to_navigation_menu"
+            app:destination="@id/navigation_menu" />
+        <action
+            android:id="@+id/action_kelolaan_fragment_to_addEditFragment"
+            app:destination="@id/addEditFragment" />
+        <action
+            android:id="@+id/action_kelolaan_fragment_to_updateKelolaanFragment"
+            app:destination="@id/updateKelolaanFragment" />
+        <action
+            android:id="@+id/action_kelolaan_fragment_to_maintenance_fragment"
+            app:destination="@id/maintenance_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ots_fragment"
+        android:name="com.ama_patrol.presentation.menu.ots.OtsFragment"
+        android:label="OTS" >
+        <action
+            android:id="@+id/action_otsFragment_to_maintenance_fragment"
+            app:destination="@id/maintenance_fragment" />
+        <action
+            android:id="@+id/action_ots_fragment_to_visit_acquisition_fragment"
+            app:destination="@id/visit_acquisition_fragment" />
+        <action
+            android:id="@+id/action_ots_fragment_to_acquisition_fragment"
+            app:destination="@id/acquisition_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/maintenance_fragment"
+        android:name="com.ama_patrol.presentation.menu.ots.maintenace.MaintenanceFragment"
+        android:label="Maintenance" >
+        <action
+            android:id="@+id/action_maintenance_fragment_to_visitMaintenanceFragment"
+            app:destination="@id/visitMaintenanceFragment" />
+        <action
+            android:id="@+id/action_maintenance_fragment_to_navigation_menu"
+            app:destination="@id/navigation_menu" />
+    </fragment>
+    <fragment
+        android:id="@+id/acquisition_fragment"
+        android:name="com.ama_patrol.presentation.menu.ots.aquistion.AcquisitionFragment"
+        android:label="Acquisition" >
+        <action
+            android:id="@+id/action_acquisitionFragment_to_navigation_menu"
+            app:destination="@id/navigation_menu" />
+        <action
+            android:id="@+id/action_acquistionFragment_to_visit_acquisition_fragment"
+            app:destination="@id/visit_acquisition_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/visit_acquisition_fragment"
+        android:name="com.ama_patrol.presentation.menu.ots.aquistion.VisitAcquisitionFragment"
+        android:label="Visit Acquisition"/>
+    <action
+        android:id="@+id/action_visitacquistionFragment_to_formMaintenace1"
+        app:destination="@id/formMaintenace1" />
+    <fragment
+        android:id="@+id/locatorFragment"
+        android:name="com.ama_patrol.presentation.menu.locator.LocatorFragment"
+        android:label="Locator" >
+        <action
+            android:id="@+id/action_locatorFragment_to_navigation_menu"
+            app:destination="@id/navigation_menu" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/visitMaintenanceFragment"
+        android:name="com.ama_patrol.presentation.menu.ots.maintenace.VisitMaintenanceFragment"
+        android:label="VisitMaintenanceFragment" >
+        <action
+            android:id="@+id/action_visitMaintenanceFragment_to_maintenance_fragment"
+            app:destination="@id/maintenance_fragment" />
+        <action
+            android:id="@+id/action_visitMaintenanceFragment_to_formMaintenace1"
+            app:destination="@id/formMaintenace1" />
+        <action
+            android:id="@+id/action_visitMaintenanceFragment_to_tagging_fragment"
+            app:destination="@id/tagging_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/formMaintenace1"
+        android:name="com.ama_patrol.presentation.menu.ots.maintenace.FormMaintenance1"
+        android:label="Form Maintenace1" >
+        <action
+            android:id="@+id/action_formMaintenace1_to_visitMaintenanceFragment"
+            app:destination="@id/visitMaintenanceFragment" />
+        <action
+            android:id="@+id/action_formMaintenace1_to_formMaintenance2"
+            app:destination="@id/formMaintenance2" />
+    </fragment>
+    <fragment
+        android:id="@+id/formMaintenance2"
+        android:name="com.ama_patrol.presentation.menu.ots.maintenace.FormMaintenance2"
+        android:label="Form Maintenance2" >
+        <action
+            android:id="@+id/action_formMaintenance2_to_formMaintenace1"
+            app:destination="@id/formMaintenace1" />
+        <action
+            android:id="@+id/action_formMaintenance2_to_formMaintenance3"
+            app:destination="@id/formMaintenance3" />
+    </fragment>
+    <fragment
+        android:id="@+id/formMaintenance3"
+        android:name="com.ama_patrol.presentation.menu.ots.maintenace.FormMaintenance3"
+        android:label="Form Maintenance3" >
+        <action
+            android:id="@+id/action_formMaintenance3_to_formMaintenance2"
+            app:destination="@id/formMaintenance2" />
+        <action
+            android:id="@+id/action_formMaintenance3_to_formMaintenance4"
+            app:destination="@id/formMaintenance4" />
+    </fragment>
+    <fragment
+        android:id="@+id/formMaintenance4"
+        android:name="com.ama_patrol.presentation.menu.ots.maintenace.FormMaintenance4"
+        android:label="Form Maintenance4" >
+        <action
+            android:id="@+id/action_formMaintenance4_to_formMaintenance3"
+            app:destination="@id/formMaintenance3" />
+        <action
+            android:id="@+id/action_formMaintenance4_to_visitMaintenanceFragment"
+            app:destination="@id/visitMaintenanceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ubahPassFragment"
+        android:name="com.ama_patrol.presentation.account.ResetPasswordFragment"
+        android:label="Ubah Password" />
+    <fragment
+        android:id="@+id/accountDetailFragment"
+        android:name="com.ama_patrol.presentation.account.AccountDetailFragment"
+        android:label="Account Detail" />
+    <fragment
+        android:id="@+id/TOSFragment"
+        android:name="com.ama_patrol.presentation.account.TOSFragment"
+        android:label="TOS" />
+    <fragment
+        android:id="@+id/learningFragment"
+        android:name="com.ama_patrol.presentation.menu.learning.LearningFragment"
+        android:label="Learning" />
+    <fragment
+        android:id="@+id/changeEmailFragment"
+        android:name="com.ama_patrol.presentation.account.ChangeEmailFragment"
+        android:label="ChangeEmailFragment" />
+    <fragment
+        android:id="@+id/addEditFragment"
+        android:name="com.ama_patrol.presentation.menu.manage.AddEditFragment"
+        android:label="AddEditFragment" >
+        <action
+            android:id="@+id/action_addEditFragment_to_takePictureFragment"
+            app:destination="@id/takePictureFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateKelolaanFragment"
+        android:name="com.ama_patrol.presentation.menu.manage.UpdateKelolaanFragment"
+        android:label="UpdateKelolaanFragment" />
+    <fragment
+        android:id="@+id/takePictureFragment"
+        android:name="TakePictureFragment"
+        android:label="TakePictureFragment" />
+</navigation>

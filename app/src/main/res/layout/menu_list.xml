@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gd_center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="30dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="@string/ots"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/gd_center_vertical"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/locator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="@string/locator"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/ots" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="@string/sla"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/locator" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/monitoring"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="@string/monitoring"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/sla" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/administration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="@string/adm"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/monitoring" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/learning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="@string/learning"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/administration" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/kelolaan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="@string/kelolaan"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/learning" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/edc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="@string/edc"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/kelolaan" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/gm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/grey"
+        android:layout_marginTop="35dp"
+        android:text="@string/gm"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/edc" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_logout"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/nunitobold"
+        android:text="@string/logout"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:backgroundTint="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gm" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

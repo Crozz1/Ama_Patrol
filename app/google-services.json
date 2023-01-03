@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "904945435531",
+    "firebase_url": "https://nearme-902ff-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "nearme-902ff",
+    "storage_bucket": "nearme-902ff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:904945435531:android:028416a3da2180de95e58e",
+        "android_client_info": {
+          "package_name": "com.ama_patrol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "904945435531-3dp0cf25d9jlc71nv6qc1vefkh6qbmbj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ama_patrol",
+            "certificate_hash": "0e94d809df2c0b255ca9c41ea03debbb378cdfbe"
+          }
+        },
+        {
+          "client_id": "904945435531-1a31mh785u2pcju8hr3ds2iu4s4cjmal.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzN6kW4Dgj6VYiZ4AGxOuCSLFStzLYH0c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "904945435531-1a31mh785u2pcju8hr3ds2iu4s4cjmal.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

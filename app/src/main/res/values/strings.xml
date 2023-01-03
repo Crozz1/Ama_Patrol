@@ -1,0 +1,125 @@
+<resources>
+    <string name="app_name">Ama_Patrol</string>
+    <string name="menu">Menu</string>
+    <string name="tagging">Tagging</string>
+    <string name="account">Account</string>
+
+    <string name="login_string">Already have an account? <b>Login here</b></string>
+    <string name="API_KEY">YOUR_API_KEY</string>
+
+    <string name="open_navigation_drawer">Open Drawer</string>
+    <string name="close_navigation_drawer">Open Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+
+        <string name="login">Login</string>
+        <string name="regiter">Sign Up</string>
+        <string name="user_name_hint">Username</string>
+        <string name="email">Email</string>
+        <string name="password_hint">Password</string>
+        <string name="sign_in_btn">Login</string>
+        <string name="register_instruction">Sign Up</string>
+        <string name="forgot_password">Forgot Password?</string>
+        <string name="reset">Reset</string>
+        <string name="logout">Logout</string>
+        <string name="info">Info</string>
+        <string name="versi">2022 @ Channel Management - Versi 1.0</string>
+        <string name="ots">OTS</string>
+        <string name="locator">Locator</string>
+        <string name="sla">SLA</string>
+        <string name="monitoring">Monitoring</string>
+        <string name="adm">Administration</string>
+        <string name="learning">Learning</string>
+        <string name="kelolaan">Kelolaan</string>
+        <string name="edc">EDC</string>
+        <string name="gm">Galery Marketing</string>
+
+
+        <string name="akuisisi">Aquistion</string>
+        <string name="maintenace">Maintenance</string>
+        <string name="Todo">To do list visit</string>
+        <string name="nama">Nama Calon Agen</string>
+        <string name="namabni">Nama BNI Agen46</string>
+        <string name="date">Tanggal</string>
+        <string name="ama">Ama</string>
+        <string name="selesai">Done</string>
+
+        <string name="yes">Ya</string>
+        <string name="tidak">Tidak</string>
+
+        //Form pertanyaan di bagian A
+        <string name="a1">1.Terdapat Spanduk Agen46 dengan Kondisi Baik</string>
+        <string name="a2">2.Spanduk Sesuai Desain Standar</string>
+        <string name="a3">3.Menggunakan PC</string>
+        <string name="a4">4.Menggunakan Smartphone</string>
+        <string name="a5">5.Terdapat Mesin EDC</string>
+        <string name="a6">6.Mesin EDC dapat beroperasi</string>
+        <string name="a7">7.Ukuran Space Lokasi Usaha (Include Gudang)</string>
+        <string name="a8">8.Terdapat Buku Saku Agen</string>
+        <string name="a9">9.Jenis Agen</string>
+
+        //Form pertanyaan di bagian B
+        <string name="b1">1.Akses Jalan Dapat Dilalui Kendaraan Roda 4</string>
+        <string name="b2">2.Lokasi Eyecathing</string>
+        <string name="b3">3.Lalu Lintas Orang dan Kendaraan Ramai</string>
+        <string name="b4">4.Lokasi Strategis/Dekat Kawasan Penduduk</string>
+        <string name="b5">5.Sinyal (Jaringan) Seluler yang Baik</string>
+        <string name="b6">6.Terdapat Koneksi Internet</string>
+
+        //Form pertanyaan di bagian C
+        <string name="c1">1.Paham Terkait Layanan Laku Pandai</string>//(Buka rekening, Tarik dan Setor)
+        <string name="c2">2.Pernah Melakukan Pembukaan Rekening</string>
+        <string name="c3">3.Paham Terkait Fitur Layanan Kebutuhan Umum</string>//(Listrik, Pulsa,
+        BPJS,dan Transfer)
+        <string name="c4">4.Pernah Bertransaksi Dengan Kartu Bank Lain</string>
+        <string name="c5">5.Paham Mengenai Penyaluran Bansos PKH(Agen Bansos)</string>
+        <string name="c6">6.Paham Mengenai Penyaluran Bansos BPNT(Agen Bansos)</string>
+        <string name="c7">7.Berhubungan Aktif Dengan Petugas BNI</string>
+        <string name="c8">8.Dikunjungi dan Dilakukan Support oleh Petugas BNI</string>
+        <string name="c9">9.Sering Terjadi Transaksi Bermasalah</string>
+
+        //Form pertanyaan di bagian D
+        <string name="d1">1.Paham/Dapat Menggunakan EDC</string>
+        <string name="d2">2.Paham/Dapat Mengoperasikan Menu di Aplikasi Agen46 (EDC)</string>
+        <string name="d3">3.Mengetahui cara melakukan Restart EDC</string>
+        <string name="d4">4.Mengetahui cara mengganti kertas struk</string>
+        <string name="d5">5.Mengetahui Nomor Telefon yang dihubungi jika EDC Bermasalah</string>
+        <string name="d6">6.Sering terjadi transaksi Bermasalah di EDC</string>
+
+        <string name="kunjungan">Form Kunjungan Agen 46</string>
+        <string name="message_no_permissions">The application need permission</string>
+        <string name="ok">OK</string>
+        <string name="alasan1">Alasan Tidak Memproses Solicite</string>
+        <string name="alasan2">Alasan Tidak Memproses Maintenance</string>
+        <string name="title_activity_visitaquistion">visitaquistion</string>
+
+        <string name="enable_gps">Please enable GPS</string>
+        <string name="required_for_this_app">Require this gps setting</string>
+        <string name="enable_now">Ok</string>
+        <string name="tab_text_1">Aquistion</string>
+        <string name="tab_text_2">Maintenance</string>
+        <string name="search">Search</string>
+        <string name="search1">Search (editable location)</string>
+        <string name="map_key" translatable="false">AlzaSyB_qsP8AOP_POMdlPz-48TDaJYjTP3vbjo</string>
+
+        <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCKvLn2KTPKD_-REPLACE-WITH-YOUR-API</string>
+        <string name="detail">Det</string>
+        <string name="keterangan">Ket</string>
+        <string name="nagen">"Nama Agen "</string>
+        <string name="tgl">Date</string>
+        <string name="nAma" />
+        <string name="save">Save</string>
+        <string name="id">ID Agen</string>
+        <string name="nik">NIK</string>
+    <string name="no_regist">idagen</string>
+    <string name="no">No</string>
+    <string name="address">Alamat</string>
+    <string name="lokasi">Lokasi Usaha</string>
+    <string name="foto_lokasi">Foto Lokasi Usaha</string>
+    <string name="maps_lokasi">Maps Lokasi</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+
+</resources>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_todo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:text="To Do List Visit"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_akuisisi"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/background"
+        android:backgroundTint="@color/grey"
+        android:text="Acquisition"
+        app:layout_constraintStart_toStartOf="@id/tv_todo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_todo" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_maintenance"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/background"
+        android:backgroundTint="@color/grey"
+        android:text="Maintenance"
+        app:layout_constraintStart_toEndOf="@id/btn_akuisisi"
+        app:layout_constraintTop_toBottomOf="@+id/tv_todo" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/btn_akuisisi">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_nama_calon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Nama BNI Agen46"
+            android:textColor="@color/black"
+            android:textSize="9dp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_tanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:text="Tanggal"
+            android:textColor="@color/black"
+            android:textSize="9dp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_go"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="258dp"
+            android:text="Yes"
+            android:textColor="@color/black"
+            android:textSize="9dp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="310dp"
+            android:text="No"
+            android:textColor="@color/black"
+            android:textSize="9dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_nama_calon"
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_tanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_tanggal"
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="20dp"
+                android:inputType="date" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250dp" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="300dp" />
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_alasan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="250dp"
+        android:text="@string/alasan1"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_alasan">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/background"
+            android:backgroundTint="@color/silver"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_back"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background"
+        android:backgroundTint="@color/green_tosca"
+        android:text="Back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_detail" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_share"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background"
+        android:backgroundTint="@color/red"
+        android:text="Share PDF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_detail" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_tracking"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/background"
+        android:backgroundTint="@color/red"
+        android:text="Live Tracking"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_detail" />
+</androidx.constraintlayout.widget.ConstraintLayout>
