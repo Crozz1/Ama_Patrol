@@ -14,14 +14,14 @@
     </style>
 
     <!-- Base application theme. -->
-    <style name="Theme.Ama_Patrol" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="Theme.Ama_Patrol" parent="Theme.MaterialComponents.Light">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="FabExtendedMaterialTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="FabExtendedMaterialTheme" parent="Theme.MaterialComponents.Light">
         <item name="android:backgroundTint">@color/colorPrimary</item>
         <item name="textAppearanceButton">@style/AppTextAppearance.Button</item>
     </style>
